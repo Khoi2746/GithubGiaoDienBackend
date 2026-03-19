@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,114 +9,121 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container my-4">
         <div class="row">
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="new-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#register">Đăng ký</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#login">Đăng nhập</a>
-            </li>
-        </ul>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="new-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#register">Đăng ký</a>
+                </li>
 
-        <div class="tab-content">
-            <div id="register" class="container tab-pane active">
-                <div class="col-md-6">
-                    <h5 class="card-title fw-bold mb-4 mt-4">Form Đăng ký thông tin</h5>
-                <div class="card">
-                    <div class="card-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="hoten" class="form-label">Họ và Tên</label>
-                                <input type="text" class="form-control" id="hoten" placeholder="Nhập họ và tên">
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#login">Đăng nhập</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="register" class="container tab-pane active">
+                    <div class="col-md-6">
+                        <h5 class="card-title fw-bold mb-4 mt-4">Form Đăng ký thông tin</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="hoten" class="form-label">Họ và Tên</label>
+                                        <input type="text" class="form-control" id="hoten" placeholder="Nhập họ và tên">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="emaildk" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="emaildk" placeholder="Nhập Email">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="sdtdk" class="form-label">Số điện thoại</label>
+                                        <input type="sdt" class="form-control" id="sdtdk"
+                                            placeholder="Nhập số điện thoại">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="mkdk" class="form-label">Mật khẩu</label>
+                                        <input type="matkhau" class="form-control" id="mkdk"
+                                            placeholder="Nhập mật khẩu">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="matkhaudk" class="form-label">Xác nhận mật khẩu</label>
+                                        <input type="matkhauagain" class="form-control" id="matkhaudk"
+                                            placeholder="Xác nhận mật khẩu">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Giới tính: </label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gioitinh" id="nam"
+                                                value="Nam">
+                                            <label class="form-check-label" for="nam">Nam</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gioitinh" id="nu"
+                                                value="Nu">
+                                            <label class="form-check-label" for="nam">Nữ</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="ngonngu" class="form-label">Ngôn ngữ</label>
+                                        <select class="form-select" id="ngonngu">
+                                            <option selected>Tiếng Việt</option>
+                                            <option>Tiếng Anh</option>
+                                            <option>Tiếng Tây Ban Nha</option>
+                                            <option>Tiếng Nhật</option>
+                                            <option>Tiếng Trung</option>
+                                            <option>Tiếng Hàn</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="dieukhoan">
+                                        <label class="form-check-label" for="dieukhoan">
+                                            Tôi đồng ý với các điều khoản và điều kiện
+                                        </label>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                                </form>
                             </div>
-
-                            <div class="mb-3">
-                                <label for="emaildk" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="emaildk" placeholder="Nhập Email">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="sdtdk" class="form-label">Số điện thoại</label>
-                                <input type="sdt" class="form-control" id="sdtdk" placeholder="Nhập số điện thoại">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="mkdk" class="form-label">Mật khẩu</label>
-                                <input type="matkhau" class="form-control" id="mkdk" placeholder="Nhập mật khẩu">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="matkhaudk" class="form-label">Xác nhận mật khẩu</label>
-                                <input type="matkhauagain" class="form-control" id="matkhaudk"
-                                    placeholder="Xác nhận mật khẩu">
-                            </div>
-
-                            <div class="mb-3">
-                                <label class="form-label">Giới tính: </label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gioitinh" id="nam" value="Nam">
-                                    <label class="form-check-label" for="nam">Nam</label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="gioitinh" id="nu" value="Nu">
-                                    <label class="form-check-label" for="nam">Nữ</label>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="ngonngu" class="form-label">Ngôn ngữ</label>
-                                <select class="form-select" id="ngonngu">
-                                    <option selected>Tiếng Việt</option>
-                                    <option>Tiếng Anh</option>
-                                    <option>Tiếng Tây Ban Nha</option>
-                                    <option>Tiếng Nhật</option>
-                                    <option>Tiếng Trung</option>
-                                    <option>Tiếng Hàn</option>
-                                </select>
-                            </div>
-
-                            <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" id="dieukhoan">
-                                <label class="form-check-label" for="dieukhoan">
-                                    Tôi đồng ý với các điều khoản và điều kiện
-                                </label>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Đăng ký</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
-            <div id="login" class="container tab-pane fade">
-                <div class="col-md-6">
-                    <h5 class="card-title fw-bold mb-4 mt-4">Form Đăng Nhập</h5>
-                <div class="card">
-                    <div class="card-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="enaildn" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="emaildn" placeholder="Nhập Email">
-                            </div>
+                <div id="login" class="container tab-pane fade">
+                    <div class="col-md-6">
+                        <h5 class="card-title fw-bold mb-4 mt-4">Form Đăng Nhập</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="enaildn" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="emaildn" placeholder="Nhập Email">
+                                    </div>
 
-                            <div class="mb-3">
-                                <label for="mkdn" class="form-label">Mật khẩu</label>
-                                <input type="matkhau" class="form-control" id="mkdn" placeholder="Nhập mật khẩu">
-                            </div>
+                                    <div class="mb-3">
+                                        <label for="mkdn" class="form-label">Mật khẩu</label>
+                                        <input type="matkhau" class="form-control" id="mkdn"
+                                            placeholder="Nhập mật khẩu">
+                                    </div>
 
-                            <button type="submit" class="btn btn-primary">Đăng nhập</button>
-                        </form>
+                                    <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
